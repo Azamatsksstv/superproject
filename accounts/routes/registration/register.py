@@ -16,7 +16,7 @@ class RegisterAPI(APIView):
                 send_otp_via_email(serializer.data['email'])
                 return Response({
                     'status': 200,
-                    'message': 'Registration successfully check email',
+                    'message': 'Registration successfully, check email',
                     'data': serializer.data,
                 })
 
