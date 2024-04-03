@@ -37,6 +37,7 @@ INSTALLED_APPS = [
 
     'accounts',
     'openai_integrations',
+    'plants',
 ]
 
 MIDDLEWARE = [
