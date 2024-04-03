@@ -34,7 +34,7 @@ class PlantIdentification(APIView):
         if not image_file:
             return Response({"error": "No image provided"}, status=400)
 
-        headers = {'Api-key': ''}
+        headers = {'Api-key': 'cNX6UX4KWbSYsoYOYQueHrIky8qTgJ3YHC8aHfWRIYHKmn5xfB'}
         files = {'image': image_file}
         response = requests.post('https://plant.id/api/v3/identification', headers=headers, files=files)
 
